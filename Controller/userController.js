@@ -61,8 +61,6 @@ const addUserInfo = async (req, res, next) => {
         // Save UserInfo document to the database
         const data = await userInfo.save()
 
-        next()
-
     } catch (error) {
         // Handle errors
         console.error('Error in addUserInfo middleware:', error);
