@@ -23,7 +23,7 @@ app.get('/', (req, res)=>{
 })
 app.post('/', checkUser); // Authenticate user
 app.post('/addUserInfo', verifyUser, addUserInfo); // Add user info
-app.get('/userInfo', verifyUser, getAllUser); // Get all user info
+app.get('/userInfo', getAllUser); // Get all user info
 app.get('/getUser/:id', verifyUser, getUser); // Get user by ID
 app.delete('/deleteUser/:id', verifyUser, deleteUser); // Delete user by ID
 app.patch('/updateUser/:id', verifyUser, updateUser); // Update user by ID
