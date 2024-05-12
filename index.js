@@ -22,8 +22,8 @@ app.get('/', (req, res)=>{
     res.send('hello')
 })
 app.post('/', checkUser); // Authenticate user
+app.post('/addUserInfo', addUserInfo); // Add user info
 app.get('/all', getAllUser)
-app.post('/addUserInfo', verifyUser, addUserInfo); // Add user info
 app.get('/userInfo',verifyUser, getAllUser); // Get all user info
 app.get('/getUser/:id', verifyUser, getUser); // Get user by ID
 app.delete('/deleteUser/:id', verifyUser, deleteUser); // Delete user by ID
