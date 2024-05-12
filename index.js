@@ -17,12 +17,6 @@ app.use(cookieParser());
 // Connect to the database
 connectDB();
 
-app.post('/', checkUser)
-app.post('/addUserInfo', addUserInfo, (req, res)=>{
-    res.status(201).send('userInfo Added')
-})
-
-
 // Verify the token
 app.get('/', (req, res)=>{
     res.send('hello')
