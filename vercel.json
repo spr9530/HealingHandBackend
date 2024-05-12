@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "functions": {
-    "api": { "handler": "index.handler" }
-  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/:1" }
+    { "source": "/", "destination": "/index.js" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.js" }
   ],
   "cleanUrls": true
+}
+
 }
