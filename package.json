@@ -4,8 +4,7 @@
   "description": "its healing hand physiotherapy backend",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "webpack --mode production"
+    "start": "node index.js"
   },
   "author": "Sparsh",
   "license": "ISC",
