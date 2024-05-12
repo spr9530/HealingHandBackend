@@ -60,6 +60,7 @@ const addUserInfo = async (req, res, next) => {
 
         // Save UserInfo document to the database
         const data = await userInfo.save()
+        res.send('Information Added')
 
     } catch (error) {
         // Handle errors
